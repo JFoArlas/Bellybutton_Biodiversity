@@ -90,7 +90,7 @@ function buildCharts(sample) {
     var barLayout = {
       title: "Top 10 Bacterial Species (OTUs)",
       xaxis: {title: "sample_values" },
-      yaxis: {title: "otu_ids"     
+      yaxis: {title: "otu_ids"}
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
