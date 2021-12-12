@@ -87,11 +87,13 @@ function buildCharts(sample) {
       
     ];
     // 9. Create the layout for the bar chart. 
-    var barLayout = {
-      title: "Top 10 Bacterial Species (OTUs)",
-      xaxis: {title: "sample_values" },
-      yaxis: {title: "otu_ids"}
-    };
+    var barLayout = {      
+      title: "Top 10 Bacteria Cultures Found (OTUs)",
+      xaxis: {title: "sample_values"},
+      yaxis: {title: "OTU IDs"}
+     
+        
+      };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
   });
