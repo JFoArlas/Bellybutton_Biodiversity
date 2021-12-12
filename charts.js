@@ -108,7 +108,7 @@ function buildCharts(sample) {
       marker: {
         size: sample_values.slice(0,10).reverse(),
         color: otu_ids.slice(0,10).reverse(),
-        colorscale: 'YlGnBu'
+        colorscale: 'Emrld'
       }
     }
     ];
@@ -131,6 +131,7 @@ function buildCharts(sample) {
         title: {text: "Belly Button Washing Frequency"},
         gauge: {
           axis: {range: [0, 10]},
+          bar: { color: "black" },
           steps: [
             {range: [0, 2], color: "darkred"},
             {range: [2, 4], color: "darkorange"},
