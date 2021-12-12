@@ -108,7 +108,7 @@ function buildCharts(sample) {
       marker: {
         size: sample_values.slice(0,10).reverse(),
         color: otu_ids.slice(0,10).reverse(),
-        colorscale: 'emrld'
+        colorscale: 'deep'
       }
     }
     ];
