@@ -82,7 +82,6 @@ function buildCharts(sample) {
       text: otu_labels.slice(0,10).reverse(),
       orientation: 'h'
     }
-      
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {      
@@ -91,19 +90,8 @@ function buildCharts(sample) {
       }
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
-  });
-}
-
-// Bar and Bubble charts
-// Create the buildCharts function.
-function buildCharts(sample) {
-  // Use d3.json to load and retrieve the samples.json file 
-  d3.json("samples.json").then((data) => {
     
-
-    // Deliverable 1 Step 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot(); 
-
+    // Deliverable 2 Bubble Chart
     // 1. Create the trace for the bubble chart.
     var bubbleData = [{
       x: otu_ids.slice(0,10).reverse(),
@@ -116,7 +104,6 @@ function buildCharts(sample) {
         colorscale: 'YlGnBu'
       }
     }
-   
     ];
 
     // 2. Create the layout for the bubble chart.
@@ -124,7 +111,7 @@ function buildCharts(sample) {
       title: "Bacteria Cultures Per Sample",
       xaxis: { title: "OTU ID" },
       margin: { pad: 0},
-      hovermode: {"closest"}
+      hovermode: "closest"
     };
 
     // 3. Use Plotly to plot the data with the layout.
