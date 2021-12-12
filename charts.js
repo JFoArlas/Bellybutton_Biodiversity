@@ -77,7 +77,7 @@ function buildCharts(sample) {
     var sample_values = result.sample_values;
 
     // 3.3. Create a variable that holds the washing frequency.
-    var wfreq = parseFloat(result1.wfreq);
+    var wfreq = parseFloat(result2.wfreq);
 
     // 1.7. Create the yticks for the bar chart so the otu_ids with the most bacteria are last. 
     var yticks = otu_ids.slice(0,10).map(id => `OTU ${id}`).reverse();
