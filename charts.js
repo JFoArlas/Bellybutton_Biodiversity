@@ -94,7 +94,10 @@ function buildCharts(sample) {
     // 1.9. Create the layout for the bar chart. 
     var barLayout = {      
       title: "Top 10 Bacteria Cultures Found (OTUs)",
-      xaxis: {title: "Samples"},    
+      xaxis: {title: "Samples"},
+      width: 400, 
+      height: 400,
+      margin: {t: 0, b: 0}    
       }
     // 1.10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
