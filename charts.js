@@ -143,7 +143,7 @@ function buildCharts(sample) {
     ];
 
     // 3.5. Create the layout for the gauge chart.
-    var gaugeLayout = {width: 300, height: 225, margin:{t: 0, b: 0}};
+    var gaugeLayout = {width: 400, height: 400, margin:{t: 0, b: 0}};
 
     // 3.6. Use Plotly to plot the gauge data and layout.
     Plotly.newPlot("gauge", gaugeData, gaugeLayout);
