@@ -97,7 +97,7 @@ function buildCharts(sample) {
       xaxis: {title: "Samples"},
       width: 400, 
       height: 400,
-      margin: {t: 0, b: 0}    
+      autosize: true   
       }
     // 1.10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout);
